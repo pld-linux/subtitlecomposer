@@ -5,8 +5,7 @@ Version:	0.3
 Release:	0.9
 License:	GPL
 Group:		X11/Applications
-#Source0:	http://dl.sourceforge.net/subtitlecomposer/%{name}-%{version}.tar.bz2
-Source0:	http://heanet.dl.sourceforge.net/sourceforge/subcomposer/subtitlecomposer-0.3.tar.bz2
+Source0:	http://dl.sourceforge.net/subtitlecomposer/%{name}-%{version}.tar.bz2
 # Source0-md5:	bca75b9c6679a6ed9cc2e802adfabdc5
 URL:		http://kde-apps.org/content/show.php?content=69822
 BuildRequires:	automake
