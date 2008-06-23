@@ -16,12 +16,12 @@ Suggests:	mplayer
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Subtitle Composer is a KDE3 text subtitle editor with
+Subtitle Composer is a KDE 3 text subtitle editor with
 gstreamer/mplayer preview.
 
 %description -l pl.UTF.8
-Subtitle Composer to edytor tekstowych napisów z podglądem
-przy użyciu gstreamera/mplayera.
+Subtitle Composer to edytor tekstowych napisów do filmów dla KDE 3 z
+podglądem przy użyciu gstreamera/mplayera.
 
 %prep
 %setup -q -n %{name}
@@ -45,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS TODO
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/apps/%{name}
-%{_iconsdir}/hicolor/*/apps/*.png
 %{_datadir}/config/subtitlecomposerrc
-%{_datadir}/mimelnk/subtitle/
+%{_datadir}/mimelnk/subtitle
 %{_desktopdir}/kde/subtitlecomposer.desktop
+%{_iconsdir}/hicolor/*/apps/*.png
