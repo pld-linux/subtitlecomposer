@@ -1,16 +1,18 @@
 Summary:	subtitlecomposer - a text subtitles editor
 Summary(pl.UTF-8):	subtitlecomposer - edytor napisów tekstowych
 Name:		subtitlecomposer
-Version:	0.3
-Release:	0.9
+Version:	0.4.1
+Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://dl.sourceforge.net/subtitlecomposer/%{name}-%{version}.tar.bz2
-# Source0-md5:	bca75b9c6679a6ed9cc2e802adfabdc5
+Source0:	http://dl.sourceforge.net/subcomposer/%{name}-%{version}.tar.bz2
+# Source0-md5:	91353661b728ce21ae2a913c9cde65a0
 URL:		http://kde-apps.org/content/show.php?content=69822
 BuildRequires:	automake
-BuildRequires:	gstreamer-devel
+BuildRequires:	gstreamer-plugins-base-devel >= 0.10
 BuildRequires:	kdelibs-devel
+BuildRequires:	pkgconfig
+BuildRequires:	xine-lib-devel
 BuildRequires:	rpmbuild(macros) >= 1.129
 Suggests:	mplayer
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -24,7 +26,7 @@ Subtitle Composer to edytor tekstowych napisów do filmów dla KDE 3 z
 podglądem przy użyciu gstreamera/mplayera.
 
 %prep
-%setup -q -n %{name}
+%setup -q
 
 %build
 cp -f /usr/share/automake/config.sub admin
