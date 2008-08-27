@@ -1,12 +1,12 @@
 Summary:	subtitlecomposer - a text subtitles editor
 Summary(pl.UTF-8):	subtitlecomposer - edytor napisów tekstowych
 Name:		subtitlecomposer
-Version:	0.4.1
+Version:	0.4.2
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/subcomposer/%{name}-%{version}.tar.bz2
-# Source0-md5:	91353661b728ce21ae2a913c9cde65a0
+# Source0-md5:	453faf628f25e97bde270759f75afd84
 URL:		http://kde-apps.org/content/show.php?content=69822
 BuildRequires:	automake
 BuildRequires:	gstreamer-plugins-base-devel >= 0.10
