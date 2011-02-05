@@ -21,7 +21,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Subtitle Composer is a KDE 3 text subtitle editor with
 gstreamer/mplayer preview.
 
-%description -l pl.UTF.8
+%description -l pl.UTF-8
 Subtitle Composer to edytor tekstowych napisów do filmów dla KDE 3 z
 podglądem przy użyciu gstreamera/mplayera.
 
